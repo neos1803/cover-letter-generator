@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 29.7cm;
+        width: 21cm;
+        border: solid 0.1px #ccc;
+        font-family: monospace;
+        font-size: 1rem;
+      }
+      header.cover-letter__header {
+        padding: 3rem 4rem 1.5rem 3rem;
+
+        background: #5271ff;
+        color: #ffffff;
+        overflow: hidden;
+        position: relative;
+      }
+      header.cover-letter__header::before {
+        content: "";
+        background: #f4e281;
+        height: 8rem;
+        width: 28rem;
+        position: absolute;
+        top: -1rem;
+        right: -14rem;
+        transform: rotate(30deg);
+      }
+      header.cover-letter__header .name {
+        padding-bottom: 1.5rem;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 2.5rem;
+        position: relative;
+      }
+      header.cover-letter__header .name::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 0.5rem;
+        width: 20rem;
+        background: #f4e281;
+      }
+      header.cover-letter__header .detail {
+        padding-top: 1rem;
+      }
+
+      main.cover-letter__main {
+        padding: 4rem;
+      }
+      main.cover-letter__main .content {
+        background: #f4f5f7;
+        padding: 3rem;
+        position: relative;
+      }
+      main.cover-letter__main .content::before {
+        content: "COVER LETTER";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-weight: 700;
+        padding: 1rem;
+        position: absolute;
+        left: -1rem;
+        top: -1rem;
+        background: #5271ff;
+        color: white;
+      }
+      main.cover-letter__main .content p {
+        margin-top: 1rem;
+        line-height: 1.5rem;
+        font-size: 0.875rem;
+      }
+      main.cover-letter__main .regard {
+        margin-top: 2rem;
+      }
+    </style>
+    <title>CV</title>
+  </head>
+  <body>
+    <header class="cover-letter__header">
+      <h1 class="name">NANDA WARDI PURBA</h1>
+      <div class="detail">
+        <div>Male, 23 y.o.</div>
+        <div>Address : Jalan Kunir V, Tangerang Selatan</div>
+        <div>Phone Number : 081213711853</div>
+        <div>Email : nandawardipurba@gmail.com</div>
+      </div>
+    </header>
+    <main class="cover-letter__main">
+      <div class="content">
+        <p>Dear SIRCLO</p>
+        <p>
+          I'm Nanda Wardi Purba and currently work as a back end developer at
+          Indonesia Open University. I'm very interested in becoming a part of
+          SIRCLO as a back end software engineer and I'm so challenged and eager
+          to land my new IT career in new place and atmosphere.
+        </p>
+        <p>
+          During my work, I used to participate in several projects and work
+          with several tech stacks and mentor some of the seniors about the new
+          tech stacks we proposed. Most of the projects consisted of same tech
+          stacks like PostgreSQL, NestJS, GraphQL and Redis, but one projects
+          used Express Typescript as the framework. Before using the mentioned
+          tech stacks, our unit used to develop apps using oldversion laravel as
+          their framework. Me and my team proposed to use new tech stacks, since
+          they aren’t keeping up with new technology. Our tech stacks proposal
+          got approved and we were assigned to teach and mentor the other
+          seniors about the new technology, eventhough we were supposed to be
+          junior.
+        </p>
+        <p>
+          Those experiences allow me to keep up my skill with new technology as
+          well as developing my confidence by mentoring others which I think are
+          needed in an IT career, especially back end development. I have
+          attached my resume for you to review. Thank you for your time. It
+          would be great to be interviewed by you and I look forward to hearing
+          from you soon.
+        </p>
+        <div class="regard">
+          <p>Best Regard,</p>
+          <p>Nanda Wardi Purba</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
