@@ -1,0 +1,17 @@
+{
+  "name": "cover-letter-generator",
+  "version": "1.0.0",
+  "description": "cli apps to generate cover letter",
+  "main": "app.js",
+  "repository": "https://github.com/neos1803/cover-letter-generator.git",
+  "author": "Ardi <oliviergiroud1998@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "html-pdf": "^3.0.1",
+    "inquirer": "^8.1.2"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
