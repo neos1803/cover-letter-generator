@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 29.7cm;
+        width: 100%;
+        border: solid 0.1px #ccc;
+        font-family: monospace;
+        font-size: 1rem;
+      }
+      header.cover-letter__header {
+        padding: 3rem 4rem 1.5rem 3rem;
+
+        background: #5271ff;
+        color: #ffffff;
+        overflow: hidden;
+        position: relative;
+      }
+      header.cover-letter__header::before {
+        content: "";
+        background: #f4e281;
+        height: 8rem;
+        width: 28rem;
+        position: absolute;
+        top: -1rem;
+        right: -14rem;
+        transform: rotate(30deg);
+      }
+      header.cover-letter__header .name {
+        padding-bottom: 1.5rem;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 2.5rem;
+        position: relative;
+      }
+      header.cover-letter__header .name::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 0.5rem;
+        width: 20rem;
+        background: #f4e281;
+      }
+      header.cover-letter__header .detail {
+        padding-top: 1rem;
+      }
+
+      main.cover-letter__main {
+        padding: 4rem;
+      }
+      main.cover-letter__main .content {
+        background: #f4f5f7;
+        padding: 3rem;
+        position: relative;
+      }
+      main.cover-letter__main .content::before {
+        content: "COVER LETTER";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-weight: 700;
+        padding: 1rem;
+        position: absolute;
+        left: -1rem;
+        top: -1rem;
+        background: #5271ff;
+        color: white;
+      }
+      main.cover-letter__main .content p {
+        margin-top: 1rem;
+        line-height: 1.5rem;
+        font-size: 0.7rem;
+      }
+      main.cover-letter__main .regard {
+        margin-top: 2rem;
+      }
+      ul {
+        font-size: 0.7rem;
+        margin-left: 1rem;
+      }
+      li {
+        padding: 0.3rem;
+      }
+    </style>
+    <title>CV</title>
+  </head>
+  <body>
+    <header class="cover-letter__header">
+      <h1 class="name">{{ strong_name }}</h1>
+      <div class="detail">
+        <div>{{ sex }}, {{ age }} y.o.</div>
+        <div>Address : {{ address }}</div>
+        <div>Phone Number : {{ phone_number }}</div>
+        <div>Email : {{ email }}</div>
+      </div>
+    </header>
+    <main class="cover-letter__main">
+      <div class="content">
+        <p>Dear {{ applied_company }}</p>
+        <p>
+          I'm {{ name }}. I'm very interested in becoming a part of
+          {{ applied_company }} as a {{ applied_position }}. With {{ years_of_exp }} years of experience in creating and delivering backend solutions,
+          I look forward to bringing my strong, technical, and analytical skills to the {{ applied_position }} opening at {{ applied_company }}.
+        </p>
+        <p>
+          Throughout my career, I have been acknowledged as a solution-focused professional with the ability to design and develop innovative applications using advanced technologies.
+          In my current role as a {{ current_position }} for {{ current_company }}, I collaborate closely with the application team to develop {{ number_of_projects }}, ensuring optimal functionality, quality, and reliability.
+          Please consider the following highlights of my career:
+          <ul>
+            {{#each projects_exp}}
+            <li>Takes part in {{ name }} which is about {{ description }}.</li>
+            {{/each}}
+            <li>I have used several technologies stacks in my previous projects, such as {{ tech_stacks }}</li>
+          </ul>
+        </p>
+        <p>
+          Those experiences allow me to keep up my skill with new technology as
+          well as developing my confidence. I have
+          attached my resume for you to review. I would greatly appreciate the opportunity to meet with you and further discuss my qualifications and your requirements in detail. Thank you for your consideration, 
+          and I look forward to speaking with you soon.
+        </p>
+        <div class="regard">
+          <p>Best Regard,</p>
+          <p>{{ name }}</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
